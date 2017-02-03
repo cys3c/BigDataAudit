@@ -12,4 +12,4 @@ python:
   - "pypy-5.3.1"
 # command to install dependencies
 # command to run tests
-script: python main.py
+script: python main.py -h
