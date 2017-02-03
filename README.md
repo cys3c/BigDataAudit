@@ -1,7 +1,8 @@
-####大数据平台安全检测(HDP)
+#Big Data Audit
+By [Kotobukki](https://github.com/kotobukki/).
 
 
-#####使用说明
+##使用说明
 程序的入口文件是HDP.py, 可以使用下面的命令查看怎么使用
 ```
 $python HDP.py -h
@@ -17,8 +18,8 @@ positional arguments:
 optional arguments:
   -h, --help      show this help message and exit
 ```
-主要有两个子功能，hadoop和spark检测
-#####hadoop
+主要有两个子功能，Hadoop和Spark检测
+##Hadoop检测
 同样可以使用`-h`查看使用说明
 ```
 python HDP.py hadoop -h
@@ -31,7 +32,7 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 `confFolder`是放置hadoop配置文件的文件夹，可以是你安装hadoop时候的conf文件夹，如`/usr/local/hadoop/conf/hadoop/`，也可以将需要的文件copy到指定的目录，copy时候文件的名字要和hadoop.json里的一样，比如下面是系统默认配置好的用于检测已知安全选项的文件，使用json格式
-```
+```json
 {
   "authentication": {
     "core-site": [
@@ -90,7 +91,7 @@ $ python HDP.py hadoop ./hadoop
 [Warning]: Suggest to enable acl for user! Set: dfs.namenode.acls.enabled=true
 ```
 
-####spark
+##Spark检测
 和hadoop检测类似，同样指定配置文件的文件夹路径，不同的是，spark默认的配置文件只有一个`spark-defaults.conf`,不要改名复制到特定的目录里。
 
 和hadoop检测类似提供了一个可以配置的需要检测配置项，在根目录的spark文件夹下，名字为`security.ini`，该文件的section名字是要检测的配置项输入什么问题，key-value以空格隔开。默认的配置，列出了必要的安全配置项。
