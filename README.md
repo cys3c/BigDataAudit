@@ -3,10 +3,10 @@ By [Kotobukki](https://github.com/kotobukki/).
 
 
 ##使用说明
-程序的入口文件是HDP.py, 可以使用下面的命令查看怎么使用
+程序的入口文件是main.py, 可以使用下面的命令查看怎么使用
 ```
-$python HDP.py -h
-usage: HDP.py [-h] {hadoop,spark} ...
+$python main.py -h
+usage: main.py [-h] {hadoop,spark} ...
 
 This is a tool for detectiong the security problem of hadoop!
 
@@ -22,8 +22,8 @@ optional arguments:
 ##Hadoop检测
 同样可以使用`-h`查看使用说明
 ```
-python HDP.py hadoop -h
-usage: HDP.py hadoop [-h] confFolder
+python main.py hadoop -h
+usage: main.py hadoop [-h] confFolder
 
 positional arguments:
   confFolder  the dir of hadoop configuration files
