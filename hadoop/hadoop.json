@@ -1,0 +1,38 @@
+{
+  "authentication": {
+    "core-site": [
+      {
+        "hadoop.security.authentication": "kerberos",
+        "reason": "Suggest to authenticate user by using kerberos!"
+      }
+    ]
+  },
+  "authorization": {
+    "core-site": [
+      {
+        "fs.permissions.enabled": "true",
+        "reason": "Suggest to enable the permission control for fs!"
+      },
+      {
+        "hadoop.security.authorization": "true",
+        "reason": "Suggest to enable authorization for every user!"
+      }
+    ]
+  },
+  "acl": {
+    "hdfs-site": [
+      {
+        "dfs.namenode.acls.enabled": "true",
+        "reason": "Suggest to enable acl for user!"
+      }
+    ]
+  },
+  "encry": {
+    "hdfs-site": [
+      {
+        "dfs.encryption.key.provider.uri": "*",
+        "reason": "Suggest to encrypt data!"
+      }
+    ]
+  }
+}
