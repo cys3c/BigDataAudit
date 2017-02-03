@@ -1,7 +1,7 @@
 #Big Data Audit
 By [Kotobukki](https://github.com/kotobukki/).
 
-[![Build Status](https://travis-ci.org/kotobukki/BigDataAudit.png)](https://travis-ci.org/kotobukki/BigDataAudit)
+[![Build Status](https://camo.githubusercontent.com/f8bbfdc05d49bbdad27dba5693bccade8cd36e12/68747470733a2f2f7472617669732d63692e6f72672f6a696d656e6269616e2f446174614d696e696e672e7376673f6272616e63683d6d6173746572)](https://travis-ci.org/kotobukki/BigDataAudit)
 
 ##使用说明
 程序的入口文件是main.py, 可以使用下面的命令查看怎么使用
