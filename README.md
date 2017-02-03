@@ -81,7 +81,7 @@ json中的core-site等字段，就是要检测的文件名字，下一级则是�
 
 以当前默认的系统配置，测试如下:
 ```
-$ python HDP.py hadoop ./hadoop
+$ python main.py hadoop ./hadoop
 [Info]: Begining to check security: authentication
 [Info]: >> Check file: core-site.xml
 [Pass]: Your hadoop.security.authentication setting is safe!
@@ -103,7 +103,7 @@ $ python HDP.py hadoop ./hadoop
 
 例子：
 ```
-$ python HDP.py spark ./spark/
+$ python main.py spark ./spark/
 [Info]: Start to check the security of spark...
 [Warning]: Suggest to add option spark.authenticate = true if your spark runs on standalone mode
 [Warning]: Suggest to add option spark.authenticate.secret if your spark runs on yarn mode
